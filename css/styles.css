@@ -9,6 +9,7 @@ body {
 }
 main {
     margin: 0 auto; 
+    max-width: 1024px;
 }
 header {
     text-align: center;
@@ -35,7 +36,8 @@ li a {
     color: black;
 }
 .profile-img {
-    width: 60%;
+    max-width: 100%;
+    height: auto;
     margin: 40px 0;
 }
 .profile-text {
@@ -138,7 +140,8 @@ footer {
         flex-direction: row-reverse;
     }
     .profile-img {
-        width: 45%; 
+        max-width: 100%;
+        height: auto;
         display: inline-block; 
         margin: 40px 20px 40px 10px; 
     }
@@ -163,4 +166,47 @@ footer {
     .back-to-top {
         display: none;
     }
+    .contact-text {
+        width: 40%;
+    }
+}
+@media (min-width: 1024px) {
+.navigation1024 {
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    width: 50%;
+}
+.nav-ul li {
+    background-color:#F9F8F8; 
+    display: inline-block;
+    padding: 10px; 
+}
+.nav-ul {
+    margin: 20px 10px 20px auto;
+  
+}
+.profile-img {
+    max-width: 100%;
+    height: auto; 
+    margin: 20px auto 20px auto;
+}
+.profile-text {
+    max-width: 50%; 
+    margin: 20px 50px;
+    font-size: 20px;
+}
+h1 {
+    max-width: 50%; 
+    margin: 20px 50px;
+    font-size: 28px;
+    text-align: left;
+}
+.card {
+    width: 33.3%;
+} 
+.contact-text {
+    width: 35%;
+}
 }
